@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div span {
+        color: red;
+      }
+      div > span {
+        color: green;
+      }
+      div + span {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <span>Outside Div</span>
+    <div>
+      <span
+        >Inside Div
+        <span>Inside Inside Div</span>
+      </span>
+      <span
+        >Inside Div
+        <span>Inside Inside Div</span>
+      </span>
+    </div>
+  </body>
+</html>
