@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Gradients from Left to Right</title>
+    <style type="text/css">
+      .gradient {
+        width: 200px;
+        height: 200px;
+      }
+
+      #g1 {
+        background: -ms-linear-gradient(left, blue, orange);
+        background: linear-gradient(to right, blue, orange);
+      }
+
+      #g2 {
+        background: -webkit-radial-gradient(center, red, yellow);
+        background: radial-gradient(center, red, yellow);
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="g1" class="gradient"></div>
+    <div id="g2" class="gradient"></div>
+  </body>
+</html>

@@ -5,7 +5,7 @@
       div span {
         color: red;
       }
-      div > span {
+      div div > span {
         color: green;
       }
       div + span {
@@ -16,10 +16,11 @@
   <body>
     <span>Outside Div</span>
     <div>
-      <span
-        >Inside Div
-        <span>Inside Inside Div</span>
-      </span>
+      <span>Inside Div </span>
+      <div>
+        <span>Inside Inside another div</span>
+      </div>
+      <span>Inside Inside Div siblings</span>
       <span
         >Inside Div
         <span>Inside Inside Div</span>
