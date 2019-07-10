@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <input id="myInput" type="text" style="width:150px" />
+    <button id="b1" onclick="updatePara()">Submit</button>
+
+    <p id="p1"></p>
+    <script>
+      function updatePara() {
+        var input = document.getElementById("myInput").value;
+        document.getElementById("p1").innerHTML = "Hi, " + input;
+      }
+      setTimeout(() =>
+        document.write(100 / 4)
+      ); /* overwrite the page and print what's inside*/
+    </script>
+  </body>
+</html>

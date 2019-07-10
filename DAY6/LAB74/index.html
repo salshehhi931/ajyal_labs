@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Finding HTML Elements by Class Name</h2>
+    <p>Hello DigitalE1!</p>
+    <p class="intro">DigitalE1 says that HTML DOM is very useful</p>
+    <p class="intro">
+      Here's this example demonstrating the
+      <b>getElementsByClassName</b> method.
+    </p>
+    <h2 class="intro">This is a h2</h2>
+    <p id="demo"></p>
+    <script>
+      var x = document.getElementsByClassName("intro");
+      var res = "";
+      for (i = 0; i < x.length; i++) {
+        res +=
+          "Elements with same class (index " +
+          i +
+          ") is: " +
+          x[i].innerHTML +
+          "<br>";
+      }
+      document.getElementById("demo").innerHTML = res;
+      //   document.getElementById("demo").innerHTML =
+      //     'The first paragraph (index 2) with class="intro": ' + x[2].innerHTML;
+    </script>
+  </body>
+</html>
