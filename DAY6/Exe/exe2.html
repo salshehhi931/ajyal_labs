@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Comments in JavaScript are not Executable</h1>
+    <p id="Xnbdemo"></p>
+    <script>
+      var input = "My name is Safia";
+      var num = [];
+      var res = 1;
+      function getWords(input) {
+        return input.split(" ");
+      }
+
+      document.getElementById("Xnbdemo").innerHTML = getWords(input);
+
+      function product(num) {
+        for (i = 0; i < num.length; i++) {
+          res *= num[i];
+        }
+        return res;
+      }
+    </script>
+  </body>
+</html>
