@@ -1,28 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<body>
-<form>
-<fieldset>
-<legend>Registration</legend> 
-<label>Username: <input type="text" name="user" required maxlength="10" pattern="[a-z]" title="[a-z]"></label> 
-<label>Password: <input type="password" name="password" required minlength="8" pattern="[a-zA-Z0-9_]"> </label>
-<br><br>
-<label>Email: <input type="email" name="email"></label>
-<br><br>
-<label>Phone number: <input type="number"></label>
-</fieldset>
-<fieldset>
-<input type="radio" name="gender" id="male" value="M"> <label for="male">Male</label>
-<input type="radio" name="gender" id="female" value="F"> <label for="female">Female</label> </fieldset>
-<fieldset> <label for="file-select">Upload form:</label> <input type="file" name="upload" id="file-select"> </fieldset> 
-<fieldset> 
-    <label for="address">Address: </label> <textarea rows="3" cols="30" name="address" id="address"></textarea> 
-</fieldset>
-<fieldset>
-    <lable>Date: <input type="date" name="date"></lable>
-</fieldset> 
-<input type="submit" value="Submit"> 
-<input type="reset" value="Reset">
-</form> 
-</body> 
-</html> 
+  <body>
+    <form>
+      <fieldset>
+        <legend>Registration</legend>
+        <label
+          >Username:
+          <input
+            type="text"
+            name="user"
+            required
+            maxlength="10"
+            pattern="[a-z]"
+            title="[a-z]"
+        /></label>
+        <label
+          >Password:
+          <input
+            type="password"
+            name="password"
+            required
+            minlength="8"
+            pattern="[a-zA-Z0-9_]"
+          />
+        </label>
+        <br /><br />
+        <label>Email: <input type="email" name="email"/></label>
+        <br /><br />
+        <label>Phone number: <input type="number"/></label>
+      </fieldset>
+      <fieldset>
+        <input type="radio" name="gender" id="male" value="M" />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="F" />
+        <label for="female">Female</label>
+      </fieldset>
+      <fieldset>
+        <label for="file-select">Upload form:</label>
+        <input type="file" name="upload" id="file-select" />
+      </fieldset>
+      <fieldset>
+        <label for="address">Address: </label>
+        <textarea rows="3" cols="30" name="address" id="address"></textarea>
+      </fieldset>
+      <fieldset>
+        <lable>Date: <input type="date" name="date"/></lable>
+      </fieldset>
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+    </form>
+  </body>
+</html>
